@@ -1,5 +1,6 @@
 import {Router} from 'express';
-import jiraChannel from './jiraChannel';
+import idLookup from './idLookup';
+import statusLookup from './statusLookup';
 const router = Router();
 
   /* GET home page. */
@@ -9,6 +10,7 @@ const router = Router();
     });
   });
 
-  router.use('/status', jiraChannel());
+  router.use('/search', idLookup());
+  router.use('/status', statusLookup());
 
   export default () => router;
