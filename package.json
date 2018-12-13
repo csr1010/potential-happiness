@@ -12,5 +12,11 @@
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-scp": "0.0.3",
+    "gulp-scp2": "^0.2.0",
+    "gulp-shell": "^0.6.5"
   }
 }
