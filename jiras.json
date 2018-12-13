@@ -2,9 +2,9 @@
   {
     "Id" : "JS-1001",
     "title" : "Low Adfinding on 300x250 Banner",
-    "status" : "Triage",
+    "status" : "To Do",
     "components" : "AdFinding" ,
-    "labels" : "JS_Ticket",
+    "labels" : ["JS_Ticket"],
     "reporter" : "George Washington",
     "assignee" : "Abraham Lincoln",
     "InLead" : "George Washington",
@@ -12,8 +12,220 @@
     "priority" : "Medium",
     "sprint" : "",
     "developer" : "Abraham Lincoln",
-    "lastComment" : "JS team, the client is having trouble tracking this banner ad, looks like the Moat tag has been implemented correctly.",
-    "epic" : ""
+    "epic" : "",
+    "lastComment" : {
+       "commenter" : "George Washington",
+       "comment" : "JS team, the client is having trouble tracking this banner ad, looks like the Moat tag has been implemented correctly."
+      }
+  },
+  {
+    "Id" : "JS-1002",
+    "title" : "Investigate low video measureability in Android",
+    "status" : "Triage",
+    "components" : "" ,
+    "labels" : [],
+    "reporter" : "Bill Clinton",
+    "assignee" : "unassigned",
+    "InLead" : "Bill Clinton",
+    "fixVersion" : "",
+    "priority" : "High",
+    "sprint" : "",
+    "developer" : "",
+    "epic" : "",
+    "lastComment" : {
+      "commenter" : "Bill Clinton",
+      "comment" : "JS team, please help us investigate why the video ads are not measureable in android."
+     }
+  },
+  {
+    "Id" : "JS-1003",
+    "title" : "Discrepancy bewteen ad server and Moat impressions, high IVT.",
+    "status" : "In Dev",
+    "components" : "AdFinding" ,
+    "labels" : ["JS_Ticket", "jst3"],
+    "reporter" : "Theodore Roosevelt",
+    "assignee" : "Herbert Hoover",
+    "InLead" : "Theodore Roosevelt",
+    "fixVersion" : "",
+    "priority" : "High",
+    "sprint" : "JST3 Sprint 12.10.18",
+    "developer" : "Herbert Hoover",
+    "epic" : "",
+    "lastComment" : {
+      "commenter" : "Theodore Roosevelt",
+      "comment" : "The high IVT rate is coming from hidden ads, which is being caused by an adfinding issue."
+     }
+  },
+  {
+    "Id" : "JS-1004",
+    "title" : "Refactor old 3PP logic",
+    "status" : "Scoping",
+    "components" : "3PP" ,
+    "labels" : ["JS_Ticket", "jst3"],
+    "reporter" : "Richard Nixon",
+    "assignee" : "unassigned",
+    "InLead" : "Richard Nixon",
+    "fixVersion" : "Mass Release 50",
+    "priority" : "Medium",
+    "sprint" : "",
+    "developer" : "",
+    "epic" : "Refactor Legacy Code",
+    "lastComment" : {
+      "commenter" : "John Kennedy",
+      "comment" : "There are some legacy 3PP setups, can we confirm if these are still active?"
+     }
+  },
+  {
+    "Id" : "JS-1005",
+    "title" : "Custom expandable logic",
+    "status" : "Blocked",
+    "components" : "AdFinding" ,
+    "labels" : ["JS_Ticket", "jst3"],
+    "reporter" : "Ronald Reagan",
+    "assignee" : "Ronald Reagan",
+    "InLead" : "Ronald Reagan",
+    "fixVersion" : "",
+    "priority" : "Medium",
+    "sprint" : "JST3 Sprint 11.26.18",
+    "developer" : "Grover Cleveland",
+    "epic" : "",
+    "lastComment" : {
+      "commenter" : "Grover Cleveland",
+      "comment" : "Looks like the test page has expired, can we request that the client re-activate?"
+     }
+  },
+  {
+    "Id" : "JS-1006",
+    "title" : "Custom 3PP blacklist",
+    "status" : "In Code Review",
+    "components" : "Blacklisting" ,
+    "labels" : ["JS_Ticket"],
+    "reporter" : "Harry Truman",
+    "assignee" : "unassigned",
+    "InLead" : "Harry Truman",
+    "fixVersion" : "",
+    "priority" : "Medium",
+    "sprint" : "JS Bridge Sprint 12.10.18",
+    "developer" : "John Adams",
+    "epic" : "",
+    "lastComment" : {
+      "commenter" : "John Adams",
+      "comment" : "Blacklist has been updated, PR submitted for review"
+     }
+  },
+  {
+    "Id" : "JS-1007",
+    "title" : "Custom Logic for Composite Ad",
+    "status" : "Ready For QA",
+    "components" : "AdFinding" ,
+    "labels" : ["JS_Ticket", "jst3"],
+    "reporter" : "Harry Truman",
+    "assignee" : "unassigned",
+    "InLead" : "Harry Truman",
+    "fixVersion" : "",
+    "priority" : "Medium",
+    "sprint" : "JST3 Sprint 12.10.18",
+    "developer" : "Thomas Jefferson",
+    "epic" : "",
+    "lastComment" : {
+      "commenter" : "Thomas Jefferson",
+      "comment" : "Blacklist has been updated, PR submitted for review"
+     }
+  },
+  {
+    "Id" : "JS-1008",
+    "title" : "Migrate client ID lookup to client configs",
+    "status" : "In QA",
+    "components" : "3PI Other" ,
+    "labels" : ["JS_Ticket"],
+    "reporter" : "Harry Truman",
+    "assignee" : "Sherlock Holmes",
+    "InLead" : "Harry Truman",
+    "fixVersion" : "",
+    "priority" : "Medium",
+    "sprint" : "JS Bridge Sprint 12.10.18",
+    "developer" : "Grover Cleveland",
+    "epic" : "",
+    "lastComment" : {
+      "commenter" : "Grover Cleveland",
+      "comment" : "Moving to QA"
+     }
+  },
+  {
+    "Id" : "JS-1009",
+    "title" : "Missing Interactions for Mobile Interscroller",
+    "status" : "Release",
+    "components" : "AdFinding" ,
+    "labels" : ["JS_Ticket", "jst3"],
+    "reporter" : "William Taft",
+    "assignee" : "William Taft",
+    "InLead" : "William Taft",
+    "fixVersion" : "",
+    "priority" : "High",
+    "sprint" : "JST3 Sprint 11.26.18",
+    "developer" : "George W. Bush",
+    "epic" : "",
+    "lastComment" : {
+      "commenter" : "George W. Bush",
+      "comment" : "This has been merged, please feel free to build/push to release"
+     }
+  },
+  {
+    "Id" : "JS-1010",
+    "title" : "New #define for 3PP",
+    "status" : "Pending Mass Release",
+    "components" : "AdFinding" ,
+    "labels" : ["JS_Ticket"],
+    "reporter" : "Martin Van Buren",
+    "assignee" : "unassigned",
+    "InLead" : "Martin Van Buren",
+    "fixVersion" : "Mass Release 50",
+    "priority" : "Medium",
+    "sprint" : "JS Bridge Sprint 11.26.18",
+    "developer" : "James Madison",
+    "epic" : "",
+    "lastComment" : {
+      "commenter" : "James Madison",
+      "comment" : "Pending MR 50"
+     }
+  },
+  {
+    "Id" : "JS-1011",
+    "title" : "Wallpaper unit not tracking as 100% in-view",
+    "status" : "Pending Data Validation",
+    "components" : "AdFinding" ,
+    "labels" : ["JS_Ticket", "jst3", "jst3.1"],
+    "reporter" : "Millard Fillmore",
+    "assignee" : "Millard Fillmore",
+    "InLead" : "Millard Fillmore",
+    "fixVersion" : "",
+    "priority" : "Medium",
+    "sprint" : "JST3 Sprint 11.26.18",
+    "developer" : "Woodrow Wilson",
+    "epic" : "",
+    "lastComment" : {
+      "commenter" : "Woodrow Wilson",
+      "comment" : "Please feel free to close once this wallpaper unit has data coming in as expected."
+     }
+  },
+  {
+    "Id" : "JS-1012",
+    "title" : "Homescreen takeover not tracking correctly",
+    "status" : "Closed",
+    "components" : "AdFinding" ,
+    "labels" : ["JS_Ticket", "jst3"],
+    "reporter" : "Donald trump",
+    "assignee" : "Donald trump",
+    "InLead" : "Donald trump",
+    "fixVersion" : "",
+    "priority" : "Medium",
+    "sprint" : "JST3 Sprint 12.10.18",
+    "developer" : "Barack Obama",
+    "epic" : "",
+    "lastComment" : {
+      "commenter" : "Barack Obama",
+      "comment" : "The ad is sandwhiched between two cross-domain iframes, and the Moat tag is also inside a cross-domain iframe. Can you request that the client make the necessary adjustments on their end?"
+     }
   },
 	{
     "Id" : "JS-2001",
@@ -30,7 +242,6 @@
     "developer" : "",
     "lastComment" : "back to me becaues I don't know my ask",
     "epic" : "Refactor LLD"
-    //Open PR?
   },
 	{
     "Id" : "JS-2002",
@@ -47,7 +258,6 @@
     "developer" : "",
     "lastComment" : "",
     "epic" : "Refactor LLD"
-    //Open PR?
   },
 	{
     "Id" : "JS-3000",
@@ -64,6 +274,5 @@
     "developer" : "",
     "lastComment" : "",
     "epic" : ""
-    //Open PR?
   }
 ]
