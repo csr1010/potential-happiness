@@ -1,0 +1,19 @@
+[
+  {
+    "Id" : "JS-1001",
+    "title" : "Low Adfinding on 300x250 Banner",
+    "status" : "Triage",
+    "components" : "AdFinding" ,
+    "labels" : "JS_Ticket",
+    "reporter" : "George Washington",
+    "assignee" : "Abraham Lincoln",
+    "InLead" : "George Washington",
+    "fixVersion" : "",
+    "priority" : "Medium",
+    "sprint" : "",
+    "developer" : "Abraham Lincoln",
+    "lastComment" : "JS team, the client is having trouble tracking this banner ad, looks like the Moat tag has been implemented correctly.",
+    "epic" : ""  
+  }
+
+]
