@@ -4,6 +4,8 @@ import statusLookup from './statusLookup';
 import assigneeLookup from './assigneeLookup';
 import componentLookup from './componentLookup';
 import reporterLookup from './reporterLookup';
+import priorityLookup from './priorityLookup';
+import epicLookup from './epicLookup';
 import fixVersionLookup from './fixVersionLookup';
 const router = Router();
 
@@ -19,6 +21,8 @@ const router = Router();
   router.use('/assignee', assigneeLookup());
   router.use('/component', componentLookup());
   router.use('/reporter', reporterLookup());
+  router.use('/priority', priorityLookup());
+  router.use('/epic', epicLookup());
   router.use('/fixVersion', fixVersionLookup());
 
   export default () => router;
