@@ -10,7 +10,10 @@ import fixVersionLookup from './fixVersionLookup';
 import inLeadLookup from './inLeadLookup';
 import sprintLookup from './sprintLookup';
 import developerLookup from './developerLookup';
-import lastCommentLookup from './lastCommentLookup';
+import getLastCommentOf from './getLastCommentOf';
+import getAssigneeOf from './getAssigneeOf';
+import getComponentOf from './getComponentOf';
+import getStatusOf from './getStatusOf';
 const router = Router();
 
   /* GET home page. */
@@ -20,6 +23,7 @@ const router = Router();
     });
   });
 
+  //Get all tickets matching input
   router.use('/search', idLookup());
   router.use('/status', statusLookup());
   router.use('/assignee', assigneeLookup());
@@ -31,6 +35,11 @@ const router = Router();
   router.use('/inLead', inLeadLookup());
   router.use('/sprint', sprintLookup());
   router.use('/developer', developerLookup());
-  router.use('/lastComment', lastCommentLookup());
+
+  //Get field from specific ticket
+  router.use('/getLastCommentOf', getLastCommentOf());
+  router.use('/getAssigneeOf', getAssigneeOf());
+  router.use('/getComponentOf', getComponentOf());
+  router.use('/getStatusOf', getStatusOf());
 
   export default () => router;
