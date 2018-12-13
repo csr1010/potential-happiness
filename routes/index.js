@@ -7,6 +7,7 @@ import reporterLookup from './reporterLookup';
 import fixVersionLookup from './fixVersionLookup';
 import inLeadLookup from './inLeadLookup';
 import developerLookup from './developerLookup';
+import lastCommentLookup from './lastCommentLookup';
 const router = Router();
 
   /* GET home page. */
@@ -24,5 +25,6 @@ const router = Router();
   router.use('/fixVersion', fixVersionLookup());
   router.use('/inLead', inLeadLookup());
   router.use('/developer', developerLookup());
+  router.use('/lastComment', lastCommentLookup());
 
   export default () => router;
