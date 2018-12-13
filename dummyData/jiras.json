@@ -214,9 +214,9 @@
     "status" : "Closed",
     "components" : "AdFinding" ,
     "labels" : ["JS_Ticket", "jst3"],
-    "reporter" : "Donald trump",
-    "assignee" : "Donald trump",
-    "InLead" : "Donald trump",
+    "reporter" : "Donald Trump",
+    "assignee" : "Donald Trump",
+    "InLead" : "Donald Trump",
     "fixVersion" : "",
     "priority" : "Medium",
     "sprint" : "JST3 Sprint 12.10.18",
@@ -224,7 +224,7 @@
     "epic" : "",
     "lastComment" : {
       "commenter" : "Barack Obama",
-      "comment" : "The ad is sandwhiched between two cross-domain iframes, and the Moat tag is also inside a cross-domain iframe. Can you request that the client make the necessary adjustments on their end?"
+      "comment" : "The ad is sandwiched between two cross-domain iframes, and the Moat tag is also inside a cross-domain iframe. Can you request that the client make the necessary adjustments on their end?"
      }
   },
   {
@@ -288,7 +288,7 @@
     "components" : "3PP" ,
     "labels" : ["JS_Ticket", "re-triage"],
     "reporter" : "Claude Monet",
-    "assignee" : "",
+    "assignee" : "unassigned",
     "InLead" : "Vincent VanGogh",
     "fixVersion" : "",
     "priority" : "Medium",
@@ -326,7 +326,7 @@
     "components" : "JS CR" ,
     "labels" : ["JS_Ticket", "jst3"],
     "reporter" : "Salvador Dali",
-    "assignee" : "",
+    "assignee" : "unassigned",
     "InLead" : "Salvador Dali",
     "fixVersion" : "",
     "priority" : "Medium",
@@ -383,7 +383,7 @@
     "components" : "Ad Finding" ,
     "labels" : ["JS_Ticket", "jst3", "jst3.1", "Celtra"],
     "reporter" : "Edward Hopper",
-    "assignee" : "",
+    "assignee" : "unassigned",
     "InLead" : "Salvador Dali",
     "fixVersion" : "Mass Release 50",
     "priority" : "Medium",
@@ -440,7 +440,7 @@
     "components" : "" ,
     "labels" : "",
     "reporter" : "Brian Fung",
-    "assignee" : "",
+    "assignee" : "unassigned",
     "InLead" : "",
     "fixVersion" : "",
     "priority" : "",
