@@ -6,10 +6,7 @@
     "start": "nodemon --exec babel-node --presets env,stage-2 index.js"
   },
   "dependencies": {
-    "express": "~4.16.0",
-    "http-errors": "~1.6.2",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.0"
+    "express": "~4.16.0"
   },
   "devDependencies": {
     "gulp": "^4.0.0",

@@ -1,15 +1,16 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import http from 'http';
-import indexRouter from './routes/index';
+import indexRouter from './routes';
 
-const server = http.Server(app);
+
 const app = express();
+const server = http.Server(app);
 const host = '127.0.0.1';
-const port = 3000;
+const port = 8082;
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.use('/', indexRouter);
+app.use('/api', indexRouter());
 
-server.listen(port, host, () => console.log(`Server running at http://${host}:${port}/`))
+server.listen(port, () => console.log(`Server running at http://${host}:${port}/`))
