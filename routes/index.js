@@ -11,6 +11,7 @@ import inLeadLookup from './inLeadLookup';
 import sprintLookup from './sprintLookup';
 import developerLookup from './developerLookup';
 import lastCommentLookup from './lastCommentLookup';
+import ticketsWithLabelLookup from './ticketsWithLabelLookup';
 const router = Router();
 
   /* GET home page. */
@@ -32,5 +33,6 @@ const router = Router();
   router.use('/sprint', sprintLookup());
   router.use('/developer', developerLookup());
   router.use('/lastComment', lastCommentLookup());
+  router.use('/ticketsWithLabel', ticketsWithLabelLookup());
 
   export default () => router;
