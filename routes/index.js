@@ -6,11 +6,12 @@ import componentLookup from './componentLookup';
 import reporterLookup from './reporterLookup';
 import priorityLookup from './priorityLookup';
 import epicLookup from './epicLookup';
+import getEpicOf from './getEpicOf';
 import fixVersionLookup from './fixVersionLookup';
 import inLeadLookup from './inLeadLookup';
 import sprintLookup from './sprintLookup';
 import developerLookup from './developerLookup';
-import labelsLookup from './labelsLookup';
+import getLabelsOf from './getLabelsOf';
 import lastCommentLookup from './lastCommentLookup';
 const router = Router();
 
@@ -28,11 +29,12 @@ const router = Router();
   router.use('/reporter', reporterLookup());
   router.use('/priority', priorityLookup());
   router.use('/epic', epicLookup());
+  router.use('/getEpicOf', getEpicOf());
   router.use('/fixVersion', fixVersionLookup());
   router.use('/inLead', inLeadLookup());
   router.use('/sprint', sprintLookup());
   router.use('/developer', developerLookup());
-  router.use('/labels', labelsLookup());
+  router.use('/getLabelsOf', getLabelsOf());
   router.use('/lastComment', lastCommentLookup());
 
   export default () => router;
