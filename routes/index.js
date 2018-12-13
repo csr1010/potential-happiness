@@ -5,6 +5,8 @@ import assigneeLookup from './assigneeLookup';
 import componentLookup from './componentLookup';
 import reporterLookup from './reporterLookup';
 import fixVersionLookup from './fixVersionLookup';
+import inLeadLookup from './inLeadLookup';
+import developerLookup from './developerLookup';
 const router = Router();
 
   /* GET home page. */
@@ -20,5 +22,7 @@ const router = Router();
   router.use('/component', componentLookup());
   router.use('/reporter', reporterLookup());
   router.use('/fixVersion', fixVersionLookup());
+  router.use('/inLead', inLeadLookup());
+  router.use('/developer', developerLookup());
 
   export default () => router;
