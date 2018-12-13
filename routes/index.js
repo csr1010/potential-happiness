@@ -10,6 +10,7 @@ import fixVersionLookup from './fixVersionLookup';
 import inLeadLookup from './inLeadLookup';
 import sprintLookup from './sprintLookup';
 import developerLookup from './developerLookup';
+import labelsLookup from './labelsLookup';
 import lastCommentLookup from './lastCommentLookup';
 const router = Router();
 
@@ -31,6 +32,7 @@ const router = Router();
   router.use('/inLead', inLeadLookup());
   router.use('/sprint', sprintLookup());
   router.use('/developer', developerLookup());
+  router.use('/labels', labelsLookup());
   router.use('/lastComment', lastCommentLookup());
 
   export default () => router;
