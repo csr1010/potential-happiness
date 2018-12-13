@@ -6,11 +6,12 @@
     "start": "nodemon --exec babel-node --presets env,stage-2 index.js"
   },
   "dependencies": {
-    "express": "~4.16.0",
-    "file-system": "^2.2.2",
-    "http-errors": "~1.6.2"
+    "express": "~4.16.0"
   },
   "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-shell": "^0.6.5",
+    "http-errors": "~1.6.2",
     "babel-cli": "^6.9.0",
     "babel-core": "^6.9.0",
     "babel-preset-env": "^1.7.0",
