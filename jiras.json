@@ -243,7 +243,7 @@
     "lastComment" : {
       "comment" : "back to me becaues I don't know my ask",
       "commenter" : "Vincent VanGogh"
-    }
+    },
     "epic" : "Refactor LLD"
   },
   {
@@ -275,7 +275,7 @@
     "priority" : "Medium",
     "sprint" : "Bridge Sprint 11.12.18",
     "developer" : "Jackson Pollock",
-    "epic" : "Refactor 3PP"
+    "epic" : "Refactor 3PP",
     "lastComment" : {
       "comment" : "This is going to be difficult",
       "commenter" : "Jackson Pollock"
@@ -294,7 +294,7 @@
     "priority" : "Medium",
     "sprint" : "Bridge Sprint 11.20.18",
     "developer" : "Jackson Pollock",
-    "epic" : "Refactor 3PP"
+    "epic" : "Refactor 3PP",
     "lastComment" : {
       "comment" : "This is going to be difficult",
       "commenter" : "Claude Monet"
@@ -313,7 +313,7 @@
     "priority" : "Medium",
     "sprint" : "JST3 Sprint 11.20.18",
     "developer" : "Frida Kahlo",
-    "epic" : ""
+    "epic" : "",
     "lastComment" : {
       "comment" : "Moving to Code Review",
       "commenter" : "Frida Kahlo"
@@ -332,7 +332,7 @@
     "priority" : "Medium",
     "sprint" : "JST3 Sprint 11.20.18",
     "developer" : "Frida Kahlo",
-    "epic" : ""
+    "epic" : "",
     "lastComment" : {
       "comment" : "JS Notes: might need #define",
       "commenter" : "Georgia O'Keeffe"
@@ -351,7 +351,7 @@
     "priority" : "High",
     "sprint" : "JST3 Sprint 11.20.18",
     "developer" : "Wassily Kandinsky",
-    "epic" : "Make AdFinding Great Again"
+    "epic" : "Make AdFinding Great Again",
     "lastComment" : {
       "comment" : "QA instructions added to ticket description",
       "commenter" : "Wassily Kandinsky"
@@ -370,7 +370,7 @@
     "priority" : "Medium",
     "sprint" : "",
     "developer" : "Keith Haring",
-    "epic" : "DMP Refactor"
+    "epic" : "DMP Refactor",
     "lastComment" : {
       "commenter" : "Keith Haring",
       "comment" : "Partner needs to provide valid JSONP"
@@ -389,7 +389,7 @@
     "priority" : "Medium",
     "sprint" : "JST3 Sprint 12.10.18",
     "developer" : "Jean-Michel Basquiat",
-    "epic" : "Make AdFinding Great Again"
+    "epic" : "Make AdFinding Great Again",
     "lastComment" : {
       "commenter" : "Michelangelo",
       "comment" : "QA Approved. Movied to Release status."
@@ -408,7 +408,7 @@
     "priority" : "High",
     "sprint" : "Bridge Sprint 12.10.18",
     "developer" : "Edward Hopper",
-    "epic" : ""
+    "epic" : "",
     "lastComment" : {
       "commenter" : "Caravaggio",
       "comment" : "QA Approved. Moved to Release status."
@@ -427,7 +427,7 @@
     "priority" : "Very High",
     "sprint" : "JST3 Sprint 12.10.18",
     "developer" : "Andy Warhol",
-    "epic" : "IN Training - Video"
+    "epic" : "IN Training - Video",
     "lastComment" : {
       "commenter" : "Andy Warhol",
       "comment" : "Meeting conducted"
