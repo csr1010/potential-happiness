@@ -1,14 +1,14 @@
-import express from 'express';
-import fs from 'fs';
+import {Router} from 'express';
+import jiraChannel from './jiraChannel';
+const router = Router();
 
-const router = express.Router();
-
-export default () => {
   /* GET home page. */
   router.get('/test', (req, res, next) => {
     res.json({
       "test" : "Hello World"
     });
   });
-  return router;
-}
+
+  router.use('/status', jiraChannel());
+
+  export default () => router;
