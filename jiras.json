@@ -15,9 +15,9 @@
     "lastComment" : "JS team, the client is having trouble tracking this banner ad, looks like the Moat tag has been implemented correctly.",
     "epic" : ""
   },
-	{
+  {
     "Id" : "JS-2001",
-		"title" : "Scoping for LLD refactor",
+    "title" : "Scoping for LLD refactor",
     "status" : "Scoping",
     "components" : "LLD" ,
     "labels" : "JS_Ticket",
@@ -28,13 +28,15 @@
     "priority" : "Very High",
     "sprint" : "",
     "developer" : "",
-    "lastComment" : "back to me becaues I don't know my ask",
+    "lastComment" : {
+      "comment" : "back to me becaues I don't know my ask",
+      "commenter" : "Vincent VanGogh"
+    }
     "epic" : "Refactor LLD"
-    //Open PR?
   },
-	{
+  {
     "Id" : "JS-2002",
-		"title" : "move lld from moat.pixels.jsc",
+    "title" : "move lld from moat.pixels.jsc",
     "status" : "Scoping",
     "components" : "LLD" ,
     "labels" : "JS_Ticket",
@@ -47,11 +49,181 @@
     "developer" : "",
     "lastComment" : "",
     "epic" : "Refactor LLD"
-    //Open PR?
   },
-	{
+  {
+    "Id" : "JS-2003",
+    "title" : "Investigate moat.pixels.jsc code for non-clients",
+    "status" : "In Dev",
+    "components" : "3PP" ,
+    "labels" : "JS_Ticket",
+    "reporter" : "Claude Monet",
+    "assignee" : "Jackson Pollock",
+    "InLead" : "Vincent VanGogh",
+    "fixVersion" : "",
+    "priority" : "Medium",
+    "sprint" : "Bridge Sprint 11.12.18",
+    "developer" : "Jackson Pollock",
+    "epic" : "Refactor 3PP"
+    "lastComment" : {
+      "comment" : "This is going to be difficult",
+      "commenter" : "Jackson Pollock"
+    }
+  },
+  {
+    "Id" : "JS-2004",
+    "title" : "Remove deadcode from moat.pixels.jsc",
+    "status" : "To Do",
+    "components" : "3PP" ,
+    "labels" : ["JS_Ticket", "re-triage"],
+    "reporter" : "Claude Monet",
+    "assignee" : "",
+    "InLead" : "Vincent VanGogh",
+    "fixVersion" : "",
+    "priority" : "Medium",
+    "sprint" : "Bridge Sprint 11.20.18",
+    "developer" : "Jackson Pollock",
+    "epic" : "Refactor 3PP"
+    "lastComment" : {
+      "comment" : "This is going to be difficult",
+      "commenter" : "Claude Monet"
+    }
+  },
+  {
+    "Id" : "JS-2005",
+    "title" : "Code Review: Add ids to omid whitelist",
+    "status" : "In Code Review",
+    "components" : "JS CR" ,
+    "labels" : ["JS_Ticket", "omid", "jst3"],
+    "reporter" : "Pablo Picasso",
+    "assignee" : "Frida Kahlo",
+    "InLead" : "Pablo Piccaso",
+    "fixVersion" : "",
+    "priority" : "Medium",
+    "sprint" : "JST3 Sprint 11.20.18",
+    "developer" : "Frida Kahlo",
+    "epic" : ""
+    "lastComment" : {
+      "comment" : "Moving to Code Review",
+      "commenter" : "Frida Kahlo"
+    }
+  },
+  {
+    "Id" : "JS-2006",
+    "title" : "QA: Verify adfinding",
+    "status" : "Ready for QA",
+    "components" : "JS CR" ,
+    "labels" : ["JS_Ticket", "jst3"],
+    "reporter" : "Salvador Dali",
+    "assignee" : "",
+    "InLead" : "Salvador Dali",
+    "fixVersion" : "",
+    "priority" : "Medium",
+    "sprint" : "JST3 Sprint 11.20.18",
+    "developer" : "Frida Kahlo",
+    "epic" : ""
+    "lastComment" : {
+      "comment" : "JS Notes: might need #define",
+      "commenter" : "Georgia O'Keeffe"
+    }
+  },
+  {
+    "Id" : "JS-2007",
+    "title" : "QA: New method impelementation",
+    "status" : "In QA",
+    "components" : "Ad Finding" ,
+    "labels" : ["JS_Ticket", "jst3", "jst3.1"],
+    "reporter" : "Henri Matisse",
+    "assignee" : "Rembrandt",
+    "InLead" : "Edvard Munch",
+    "fixVersion" : "Mass Release 50",
+    "priority" : "High",
+    "sprint" : "JST3 Sprint 11.20.18",
+    "developer" : "Wassily Kandinsky",
+    "epic" : "Make AdFinding Great Again"
+    "lastComment" : {
+      "comment" : "QA instructions added to ticket description",
+      "commenter" : "Wassily Kandinsky"
+    }
+  },
+  {
+    "Id" : "JS-2008",
+    "title" : "Blocked: Update JSONP",
+    "status" : "Blocked",
+    "components" : "3PI" ,
+    "labels" : ["JS_Ticket", "jst3", "jst3.1", "DMP"],
+    "reporter" : "Mark Rothko",
+    "assignee" : "Mark Rothko",
+    "InLead" : "Salvador Dali",
+    "fixVersion" : "",
+    "priority" : "Medium",
+    "sprint" : "",
+    "developer" : "Keith Haring",
+    "epic" : "DMP Refactor"
+    "lastComment" : {
+      "commenter" : "Keith Haring",
+      "comment" : "Partner needs to provide valid JSONP"
+    }
+  },
+  {
+    "Id" : "JS-2009",
+    "title" : "add support to Celtra",
+    "status" : "Pending Mass Release",
+    "components" : "Ad Finding" ,
+    "labels" : ["JS_Ticket", "jst3", "jst3.1", "Celtra"],
+    "reporter" : "Edward Hopper",
+    "assignee" : "",
+    "InLead" : "Salvador Dali",
+    "fixVersion" : "Mass Release 50",
+    "priority" : "Medium",
+    "sprint" : "JST3 Sprint 12.10.18",
+    "developer" : "Jean-Michel Basquiat",
+    "epic" : "Make AdFinding Great Again"
+    "lastComment" : {
+      "commenter" : "Michelangelo",
+      "comment" : "QA Approved. Movied to Release status."
+    }
+  },
+  {
+    "Id" : "JS-2010",
+    "title" : "Detect Audio in IMASDK Secure Mode",
+    "status" : "Release",
+    "components" : "Video Integration" ,
+    "labels" : ["JS_Ticket", "Video-VPAID", "jst3.1", "Celtra"],
+    "reporter" : "Edward Hopper",
+    "assignee" : "Auguste Rodin",
+    "InLead" : "Francisco Goya",
+    "fixVersion" : "Mass Release 50",
+    "priority" : "High",
+    "sprint" : "Bridge Sprint 12.10.18",
+    "developer" : "Edward Hopper",
+    "epic" : ""
+    "lastComment" : {
+      "commenter" : "Caravaggio",
+      "comment" : "QA Approved. Moved to Release status."
+    }
+  },
+  {
+    "Id" : "JS-2011",
+    "title" : "IN Training Video - part 4",
+    "status" : "Closed",
+    "components" : "IN Training" ,
+    "labels" : ["JS_Ticket", "Training", "jst3.1", "jst3"],
+    "reporter" : "Piet Mondrian",
+    "assignee" : "Andy Warhol",
+    "InLead" : "",
+    "fixVersion" : "",
+    "priority" : "Very High",
+    "sprint" : "JST3 Sprint 12.10.18",
+    "developer" : "Andy Warhol",
+    "epic" : "IN Training - Video"
+    "lastComment" : {
+      "commenter" : "Andy Warhol",
+      "comment" : "Meeting conducted"
+    }
+  },
+  {
     "Id" : "JS-3000",
-		"title" : "HOLD for end of JSON",
+    "title" : "HOLD for end of JSON",
     "status" : "",
     "components" : "" ,
     "labels" : "",
@@ -64,6 +236,5 @@
     "developer" : "",
     "lastComment" : "",
     "epic" : ""
-    //Open PR?
   }
 ]
