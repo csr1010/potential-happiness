@@ -7,6 +7,9 @@ import reporterLookup from './reporterLookup';
 import priorityLookup from './priorityLookup';
 import epicLookup from './epicLookup';
 import fixVersionLookup from './fixVersionLookup';
+import inLeadLookup from './inLeadLookup';
+import sprintLookup from './sprintLookup';
+import developerLookup from './developerLookup';
 const router = Router();
 
   /* GET home page. */
@@ -24,5 +27,8 @@ const router = Router();
   router.use('/priority', priorityLookup());
   router.use('/epic', epicLookup());
   router.use('/fixVersion', fixVersionLookup());
+  router.use('/inLead', inLeadLookup());
+  router.use('/sprint', sprintLookup());
+  router.use('/developer', developerLookup());
 
   export default () => router;
