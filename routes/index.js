@@ -15,7 +15,7 @@ import getAssigneeOf from './getAssigneeOf';
 import getComponentOf from './getComponentOf';
 import getStatusOf from './getStatusOf';
 import labelsLookup from './labelsLookup';
-import lastCommentLookup from './lastCommentLookup';
+//import lastCommentLookup from './lastCommentLookup';
 const router = Router();
 
   /* GET home page. */
@@ -44,6 +44,6 @@ const router = Router();
   router.use('/getComponentOf', getComponentOf());
   router.use('/getStatusOf', getStatusOf());
   router.use('/labels', labelsLookup());
-  router.use('/lastComment', lastCommentLookup());
+  //router.use('/lastComment', lastCommentLookup());
 
   export default () => router;
