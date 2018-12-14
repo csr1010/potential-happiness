@@ -1,4 +1,4 @@
-# SLACK-JIRA BOT (SAMANTHA)
+# SLACK-JIRA BOT (SAM)
 # ODC December Hackathon 2018
 
 A SLACK-JIRA bot with Natural language capabilities
