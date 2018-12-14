@@ -11,6 +11,7 @@ import fixVersionLookup from './fixVersionLookup';
 import inLeadLookup from './inLeadLookup';
 import sprintLookup from './sprintLookup';
 import developerLookup from './developerLookup';
+import ticketsWithLabelLookup from './ticketsWithLabelLookup';
 import getLabelsOf from './getLabelsOf';
 import getLastCommentOf from './getLastCommentOf';
 import getAssigneeOf from './getAssigneeOf';
@@ -18,6 +19,7 @@ import getComponentOf from './getComponentOf';
 import getStatusOf from './getStatusOf';
 import labelsLookup from './labelsLookup';
 import multipartQuery from './multipartQuery';
+
 const router = Router();
 
   /* GET home page. */
@@ -27,8 +29,8 @@ const router = Router();
     });
   });
 
-  //Get all tickets matching input
-  router.use('/search', idLookup());
+  
+  // Get all tickets matching input
   router.use('/status', statusLookup());
   router.use('/assignee', assigneeLookup());
   router.use('/component', componentLookup());
@@ -40,9 +42,12 @@ const router = Router();
   router.use('/inLead', inLeadLookup());
   router.use('/sprint', sprintLookup());
   router.use('/developer', developerLookup());
+  router.use('/ticketsWithLabel', ticketsWithLabelLookup());
   router.use('/getLabelsOf', getLabelsOf());
   
 
+  // give one ticket
+  router.use('/search', idLookup());
   //Get field from specific ticket
   router.use('/getLastCommentOf', getLastCommentOf());
   router.use('/getAssigneeOf', getAssigneeOf());
