@@ -25,8 +25,8 @@ const router = Router();
     });
   });
 
-  //Get all tickets matching input
-  router.use('/search', idLookup());
+  
+  // Get all tickets matching input
   router.use('/status', statusLookup());
   router.use('/assignee', assigneeLookup());
   router.use('/component', componentLookup());
@@ -38,12 +38,15 @@ const router = Router();
   router.use('/sprint', sprintLookup());
   router.use('/developer', developerLookup());
 
-  //Get field from specific ticket
-  router.use('/getLastCommentOf', getLastCommentOf());
-  router.use('/getAssigneeOf', getAssigneeOf());
-  router.use('/getComponentOf', getComponentOf());
-  router.use('/getStatusOf', getStatusOf());
-  router.use('/labels', labelsLookup());
+  // give one ticket
+  router.use('/search', idLookup());
+
+  // Get field from specific ticket
+  // router.use('/getLastCommentOf', getLastCommentOf());
+  // router.use('/getAssigneeOf', getAssigneeOf());
+  // router.use('/getComponentOf', getComponentOf());
+  // router.use('/getStatusOf', getStatusOf());
+  // router.use('/labels', labelsLookup());
   //router.use('/lastComment', lastCommentLookup());
 
   export default () => router;
