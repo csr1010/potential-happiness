@@ -17,7 +17,7 @@ export default () => {
         if (Array.isArray(ticket[key])){
           return caseInsensitiveIncludes(ticket[key], queryString[key]);
         }
-        return queryString[key].toLowerCase() === ticket[key].toLowerCase();
+        return ticket[key].toLowerCase().indexOf(queryString[key].toLowerCase()) > -1;
       })
     });
     return list;
