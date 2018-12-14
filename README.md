@@ -15,6 +15,24 @@ Vanessa
 
 Xavier
 
+# plus points
+
+Diversed team 
+
+written from scratch with on the spot learning (quick learning and adaptability)
+
+tried new technologies which most of the team has never worked before
+
+Very useful because
+
+- no need to remember any slack commands
+
+- enjoy talking to JIRA in natural english
+
+- no need to switch to JIRA WEB UI.
+
+
+
 # tech stack
 
 Nodejs + express + firebase functions
