@@ -6,11 +6,10 @@ import indexRouter from './routes';
 
 const app = express();
 const server = http.Server(app);
-const host = '127.0.0.1';
-const port = 8082;
+const port = 3333;
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use('/api', indexRouter());
 
-server.listen(port, () => console.log(`Server running at http://${host}:${port}/`))
+server.listen(port, () => console.log(`Server running on ${port}`))
