@@ -17,6 +17,7 @@ import getAssigneeOf from './getAssigneeOf';
 import getComponentOf from './getComponentOf';
 import getStatusOf from './getStatusOf';
 import labelsLookup from './labelsLookup';
+import multipartQuery from './multipartQuery';
 const router = Router();
 
   /* GET home page. */
@@ -40,6 +41,7 @@ const router = Router();
   router.use('/sprint', sprintLookup());
   router.use('/developer', developerLookup());
   router.use('/getLabelsOf', getLabelsOf());
+  
 
   //Get field from specific ticket
   router.use('/getLastCommentOf', getLastCommentOf());
@@ -47,5 +49,7 @@ const router = Router();
   router.use('/getComponentOf', getComponentOf());
   router.use('/getStatusOf', getStatusOf());
   router.use('/labels', labelsLookup());
+
+  router.use('/multipartQuery', multipartQuery());
 
   export default () => router;
