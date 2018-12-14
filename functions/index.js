@@ -8,18 +8,19 @@ exports.fetchDialogFlowData = functions.https.onRequest((request, response) => {
   results.any = parameters['any'] || '';
   let endPoint = null;
   let callback = null;
+  let domain = `100.26.106.242:3333`;
 
   // give me status of ticket js-706
   // give me assignee of ticket js-706
   if ('ticketProp' in parameters) {
     let ticketProp = (parameters['ticketProp'] || 'status');
-    endPoint = `http://127.0.0.1:8082/api/search/${results.any}`;
+    endPoint = `http://${domain}/api/search/${results.any}`;
     callback = (res) => {
       if (res.data.length === 0) {
         response.send(JSON.stringify({ "fulfillmentText": "Sorry! No tickets found" }));
       } else {
         let result;
-        if (ticketProp === "lastComment") {
+        if (ticketProp.toLowerCase().indexOf("comment") > -1) {
           result = "Last comment was made by : "+res.data[0][ticketProp].commenter
           +" and the comment was ```"+res.data[0][ticketProp].comment+"``` ";
         } else {
@@ -35,15 +36,17 @@ exports.fetchDialogFlowData = functions.https.onRequest((request, response) => {
   // give me tickets with priority High
   if ('ticketsWith' in parameters) {
     let ticketsWith = (parameters['ticketsWith'] || 'status');
-    endPoint = `http://127.0.0.1:8082/api/${ticketsWith}/${results.any}`;
+    endPoint = `http://${domain}/api/${ticketsWith}/${results.any}`;
     callback = (res) => {
       if (res.data.length === 0) {
+        response.setHeader('Content-Type', 'applicaiton/json');
         response.send(JSON.stringify({ "fulfillmentText": "Sorry! No tickets found" }));
       } else {
         let o = res.data.reduce((a, b) => {
           let desc = `${b.Id} - ${b.title} - ${b.status}`;
           return `${a} ${!a ? '' : '\n'} ${desc}`;
         }, '');
+        response.setHeader('Content-Type', 'applicaiton/json');
         response.send(JSON.stringify({ "fulfillmentText": o}));
       }
     }
