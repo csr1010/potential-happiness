@@ -1,5 +1,5 @@
 # SLACK-JIRA BOT (SAM)
-# ODC December Hackathon 2018
+# ODC December Hackathon 2018 (Denver)
 
 A SLACK-JIRA bot with Natural language capabilities
 
@@ -64,24 +64,43 @@ learn node js, express framework, rest API creation
 
 # slack commands
 
-```give me status of ticket JS-1001
+How can I help you
+
+get property of ticket
+```
+give me status of ticket JS-1001
 give me assignee of ticket JS-1001
+who is the developer on JS-2011
 status of JS-1001 
 assigned JS-1001
 priority JS-1001
 comment on JS-1001
 title of JS-1001
 
-or
+```
+or  get all tickets matching a property
 
+```
+give me tickets with labels jst3, developer Frida Kahlo
+show me all tickets with developer Abraham Lincoln
+what tickets are assigned to Abraham Lincoln
+tickets with status code review
+tickets with epic refactor
 give me tickets with status closed
 list all high priority tickets
 list all closed status tickets
 
-or
+```
+or  get all tickets matching multiple properties
 
+```
+tickets with release MR35, status release
+tickets with epic refactor, status blocked
 tickets with priority high, labels jst3
 tickets with release MR35, status Closed
 tickets with labels jst3, status Closed
 tickets from components Adfinding, status Closed
+Tickets with priority high, release mr35, status closed
 ```
+
+# preview
