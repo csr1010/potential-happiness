@@ -7,7 +7,7 @@ export default () => {
 
   router.get('/:ticketComponent', (req, res, next) => {
     const ticketComponent = req.params.ticketComponent;
-    var result = dummyData.filter(ticket => ticket.components == ticketComponent);
+    var result = dummyData.filter(ticket => ticket.components.toLowerCase() == ticketComponent.toLowerCase());
     res.json(result);
   });
 
