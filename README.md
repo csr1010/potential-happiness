@@ -27,21 +27,27 @@ tried new technologies which most of the team has never worked before
 
 Very useful because
 
-- no need to remember any slack commands
+- don't have to remember any slack commands
 
 - enjoy talking to JIRA in natural english
 
-- no need to switch to JIRA WEB UI.
+- don't have to switch to JIRA WEB UI
+
+- can simultaneously talk to a real person and bot at the same time.
 
 
 
 # tech stack
 
-Nodejs + express + firebase functions
+Nodejs + express + cloud firebase functions
 
 dialogflow - NLP from google
 
 slack Integration (Personal slack)
+
+Can be inegrated with Voice commands https://bot.dialogflow.com/c180d840-61c6-4683-b7d0-b38fb1e3500a
+
+(This feature has not been actively tested!)
 
 
 # Learnings & challenges
