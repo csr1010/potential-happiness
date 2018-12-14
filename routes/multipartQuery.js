@@ -4,10 +4,20 @@ import dummyData from "../dummyData/jiras.json";
 const router = Router();
 
 export default () => {
+  function caseInsensitiveIncludes(arr, word){
+  for (var i = 0, L = arr.length; i < L; i++) {
+    if (arr[i].toLowerCase() === word.toLowerCase()) return true;
+  }
+  return false;
+}
+
   function filterResults(queryKeys, list, queryString) {
     queryKeys.forEach(key => {
       list = list.filter(ticket => {
-        return queryString[key] === ticket[key]
+        if (Array.isArray(ticket[key])){
+          return caseInsensitiveIncludes(ticket[key], queryString[key]);
+        }
+        return queryString[key].toLowerCase() === ticket[key].toLowerCase();
       })
     });
     return list;
