@@ -18,6 +18,7 @@ import getAssigneeOf from './getAssigneeOf';
 import getComponentOf from './getComponentOf';
 import getStatusOf from './getStatusOf';
 import labelsLookup from './labelsLookup';
+import multipartQuery from './multipartQuery';
 
 const router = Router();
 
@@ -43,6 +44,7 @@ const router = Router();
   router.use('/developer', developerLookup());
   router.use('/ticketsWithLabel', ticketsWithLabelLookup());
   router.use('/getLabelsOf', getLabelsOf());
+  
 
   // give one ticket
   router.use('/search', idLookup());
@@ -52,5 +54,7 @@ const router = Router();
   router.use('/getComponentOf', getComponentOf());
   router.use('/getStatusOf', getStatusOf());
   router.use('/labels', labelsLookup());
+
+  router.use('/multipartQuery', multipartQuery());
 
   export default () => router;
