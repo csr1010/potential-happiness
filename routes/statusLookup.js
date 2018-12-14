@@ -7,7 +7,7 @@ export default () => {
 
   router.get('/:ticketStatus', (req, res, next) => {
     const ticketStatus = req.params.ticketStatus;
-    var result = dummyData.filter(ticket => ticket.status == ticketStatus);
+    var result = dummyData.filter(ticket => ticket.status.toLowerCase() == ticketStatus.toLowerCase());
     res.json(result);
   });
 
