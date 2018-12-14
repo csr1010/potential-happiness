@@ -17,7 +17,9 @@ Xavier
 
 # plus points
 
-Diversed team 
+Diversed and cooperative team 
+
+Each member on team learned and contributed to the project
 
 written from scratch with on the spot learning (quick learning and adaptability)
 
