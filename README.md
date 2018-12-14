@@ -1,4 +1,4 @@
-# SLACK-JIRA BOT (SAM)
+# SLACK-DIALOGFLOW-JIRA BOT (SAM)
 # ODC December Hackathon 2018 (Denver)
 
 A SLACK-JIRA bot with Natural language capabilities
