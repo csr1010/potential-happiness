@@ -7,7 +7,7 @@ export default () => {
 
   router.get('/:ticketAssignee', (req, res, next) => {
     const ticketAssignee = req.params.ticketAssignee;
-    var result = dummyData.filter(ticket => ticket.assignee == ticketAssignee);
+    var result = dummyData.filter(ticket => ticket.assignee.toLowerCase() == ticketAssignee.toLowerCase());
     res.json(result);
   });
 
