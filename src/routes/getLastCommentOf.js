@@ -1,5 +1,5 @@
 import {Router} from "express"
-import dummyData from "../dummyData/jiras.json"
+import dummyData from "../../dummyData/index.json"
 
 const router = Router();
 
