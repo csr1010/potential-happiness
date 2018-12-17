@@ -6,7 +6,7 @@ import indexRouter from './routes';
 
 const app = express();
 const server = http.Server(app);
-const port = 3333;
+const port = process.env.PORT || 3333;
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
